@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morenzo - Personal Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 0;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        nav a.active {
+            background: #764ba2;
+            color: white;
+        }
+
+        /* Main Content */
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            border: 5px solid #667eea;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .student-info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .biography {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .biography h2 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .interests {
+            margin-top: 1.5rem;
+        }
+
+        .interests h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .interests ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .interests li {
+            background: #e3f2fd;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s ease;
+        }
+
+        .interests li:hover {
+            transform: translateX(5px);
+        }
+
+        .interests li::before {
+            content: "⚡";
+            margin-right: 10px;
+        }
+
+        .bio-text {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">My Profile</a></li>
+                <li><a href="character.html">My favorite character</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Profile Content -->
+        <div class="profile-card">
+            <!-- Profile Image -->
+            <img src="Screenshot 2025-06-06 231434.png" alt="Morenzo (Me)" class="profile-image">
+            
+            <!-- Name and Title -->
+            <h1>Morenzo Mico</h1>
+            
+            <!-- Student Information -->
+            <div class="student-info">
+                <p><strong>Class:</strong> 8B</p>
+                <p><strong>Absent Number:</strong> 16</p>
+            </div>
+
+            <!-- Biography Section -->
+            <div class="biography">
+                <h2>About Me</h2>
+                
+                <div class="bio-text">
+                    <p>Hello! My name is Morenzo, I'm a student from class 8B with the absent number of 16. I'm passionate about various things that make life exciting and meaningful. I believe in pursuing what you love and always striving to improve yourself.</p>
+                    
+                    <p>I'm someone who enjoys both physical activities and entertainment. Sports help me stay active and competitive, while anime provides me with amazing stories and life lessons. I also appreciate the simple pleasures in life, like enjoying delicious food.</p>
+                </div>
+
+                <!-- Interests Section -->
+                <div class="interests">
+                    <h3>My Interests & Hobbies</h3>
+                    <ul>
+                        <li><strong>Football:</strong> I enjoy playing and watching football. It's a team sport that teaches cooperation, discipline, and strategy, where every player contributes to the success of the game.</li>
+                        <li><strong>AOT Anime:</strong> This wonderful anime has taught me about following your goals, sacrifice, and never giving up on your dreams</li>
+                        <li><strong>One Piece Anime:</strong> One piece, has taught me so many things. That includes: forgiving people, respect eacch other, care, friendship, hard work, and dedication.</li>
+                        <li><strong>Steak:</strong> Steak is for sure my favorite food. They're tasty, chewy, and usually well seasoned which could help increase my stamina during sports or daily activities</li>
+                    </ul>
+                </div>
+
+                <div class="bio-text">
+                    <p>From football, I've learned the value of teamwork and strategic thinking. The anime series I watch like Attack on titan and One piece, have inspired me with their messages about pursuing dreams and working hard to achieve goals. These stories remind me that with determination and good friends by your side, you can overcome any challenge.</p>
+                    
+                    <p>I believe that having diverse interests makes life more colorful and helps you grow as a person. Whether it's scoring a goal on the football field or getting inspired by an anime character's journey, every experience teaches us something valuable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
